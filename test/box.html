@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto Scroll Slider</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        .box {
+            /** Mandatory **/
+            width: 700px;
+            height: 400px;
+            overflow: hidden;
+
+            /** Optional **/
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="box">
+
+    </div>
+<script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="../lib/autoScrollSlider.js"></script>
+<script>
+    var pages = [
+        'iframes/putting-first-names-to-faces.html',
+        'iframes/risky.html',
+        'iframes/smooth-operator.html',
+        'iframes/to-be-continued.html',
+        'iframes/urban-shift.html'
+    ];
+
+    // Create the app
+    aScroll = new autoScrollSlider(pages, {'selector':'contaddiner'});
+
+    // Start the animation
+    aScroll.start();
+</script>
+</body>
+</html>
